@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <title>Elderly Neglect</title>
+</head>
+
+<body>
+
+  <div class="Introduction">
+    <h1>
+      Elderly Neglect
+    </h1>
+    <h3>A website to experience the journey of the elderly and what can be done about them. </h3>
+  </div>
+
+  <div class="questions">
+  <h3 class="quizIntro">Given below is a quiz to reflect back on your interactions with the elderly. It is designed to
+    know your involvement in the matter and how it impacts the ones around you.</h3>
+
+  <button onclick="showNext()">Start</button>
+
+  <div id="question1" class="hidden">
+    <p>Do you spend with the elderly? (includes your grandparents)</p>
+    <button onclick="showOptions('question2')">True</button>
+    <button onclick="showOptions('question2')">False</button>
+  </div>
+    <br />
+
+  <div id="question2" class="hidden">
+    <p>Do you find it hard to converse with the elderly about your daily life because of the generation gap?</p>
+    <button onclick="showOptions('question3')">True</button>
+    <button onclick="showOptions('question3')">False</button>
+  </div>
+  <br />
+
+  <div id="question3" class="hidden">
+    <p>Does workload affect your interactions with the elderly?</p>
+    <button onclick="showOptions('question4')">True</button>
+    <button onclick="showOptions('question4')">False</button>
+  </div>
+  <br />
+
+  <div id="question4" class="hidden">
+    <p>Do you talk to the elderly on a regular basis?</p>
+    <button onclick="showOptions('summary')">True</button>
+    <button onclick="showOptions('summary')">False</button>
+  </div>
+  <br/>
+
+    
+  <div id="summary" class="hidden">
+    <h3>Summary</h3>
+    <p></p>
+  </div>
+    <button onclick="click1()">Find out more</button>
+  </div>
+
+
+
+  <script>
+    function showNext() {
+      document.getElementById('question1').style.display = 'block';
+    }
+
+    function showOptions(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+
+</html>
